@@ -6,7 +6,7 @@
  * 请注意，对此文件的修改都会重启 vuepress 服务。
  * 部分配置项的更新没有必要重启 vuepress 服务，建议请在 `.vuepress/config.js` 文件中配置
  *
- * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
+ * 特别地，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
  */
 
 import { viteBundler } from '@vuepress/bundler-vite'
