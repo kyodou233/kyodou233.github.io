@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./app-248UO0Jo.js";const o={};function r(n,c){return a(),t("div")}const i=e(o,[["render",r]]),m=JSON.parse('{"path":"/about/","title":"关于","lang":"zh-CN","frontmatter":{"title":"关于","pageLayout":"page"},"readingTime":{"minutes":0.02,"words":5},"git":{},"filePathRelative":"about/README.md","headers":[]}');export{i as comp,m as data};
