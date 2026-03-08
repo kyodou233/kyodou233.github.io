@@ -13,6 +13,7 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import navbar from './navbar'
 import collections from './collections'
+import './theme/styles/custom.css'
 
 /**
  * @see https://theme-plume.vuejs.press/config/theme/
@@ -51,18 +52,20 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/theme/#profile
    */
 
-  //不知为何，这个profile是在/blog/下显示的，很诡异啊
+  //为何这个profile是在/blog/下显示的？
+  profile: false,
+  /** 
   profile: {
-    //avatar: 'https://theme-plume.vuejs.press/plume.png',
-    //name: '蘧堂',
-    //description: '请输入文本',
-    //circle: true,
-    //location: 'this is location',
-    //layout: 'left',
-    // organization: '',
-    //enabled: ({ path }) => path.startsWith('/about/'),
-  },
+    avatar: 'https://theme-plume.vuejs.press/plume.png',
+    name: '蘧堂',
+    description: '请输入文本',
+    circle: false,
+    location: 'this is location',
+    layout: 'right',
+    organization: '',
 
+  },
+  */
   navbar,
   collections,
 
