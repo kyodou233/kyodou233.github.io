@@ -77,3 +77,14 @@
 .vp-profile {
   display: none;
 }
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
