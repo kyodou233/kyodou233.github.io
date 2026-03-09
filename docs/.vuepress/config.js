@@ -17,11 +17,11 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: '蘧堂の小窝',
-  description: '蘧堂の小窝',
+  description: '喵喵喵',
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/D3190040ADC11E2C98521621A4A99328.png' }]
   ],
 
   bundler: viteBundler(),
@@ -86,7 +86,7 @@ export default defineUserConfig({
     // },
 
     /* 文章字数统计、阅读时间，设置为 false 则禁用 */
-    // readingTime: true,
+    readingTime: true,
 
     /**
      * markdown

@@ -20,7 +20,7 @@ import './theme/styles/custom.css'
  */
 export default defineThemeConfig({
 
-  //logo: 'https://theme-plume.vuejs.press/plume.png',
+  //logo: './public/D3190040ADC11E2C98521621A4A99328.png',
 
   appearance: true,  // 配置 深色模式
 
@@ -53,8 +53,8 @@ export default defineThemeConfig({
    */
 
   //为何这个profile是在/blog/下显示的？
-  profile: false,
-  /** 
+  //profile: false,
+
   profile: {
     avatar: 'https://theme-plume.vuejs.press/plume.png',
     name: '蘧堂',
@@ -65,7 +65,7 @@ export default defineThemeConfig({
     organization: '',
 
   },
-  */
+  
   navbar,
   collections,
 
