@@ -73,3 +73,7 @@
 .vp-card-wrapper {
   background-color: var(--vp-c-bg-elv);
 }
+
+.vp-profile {
+  display: none;
+}
