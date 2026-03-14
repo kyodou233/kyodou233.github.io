@@ -12,6 +12,7 @@ export default defineNavbarConfig([
   //{ text: '标签', link: '/blog/tags/' },
   { text: '文章', link: '/blog/' },
   { text: '关于', link: '/about/' },
+  { text: 'Test', link: '/test/' },
   //{
   //  text: '笔记',
   //  items: [{ text: '示例', link: '/demo/README.md' }]

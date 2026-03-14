@@ -40,7 +40,7 @@
 
 .aside {
   display: block;
-  position: sticky;
+
   top: calc(var(--vp-nav-height) + 2rem);
   width: 270px;
   text-align: center;
@@ -132,6 +132,26 @@
 @media (min-width: 1440px) {
     .my-content {
         max-width: 1104px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .aside {
+        width: 100%;
+        position: static;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .about-content {
+        width: 100%;
     }
 }
 

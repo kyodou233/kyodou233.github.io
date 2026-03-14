@@ -7,7 +7,10 @@ import { defineClientConfig } from 'vuepress/client'
 // import CustomComponent from './theme/components/Custom.vue'
 
 import './theme/styles/custom.css'
+
 import MyProfile from './theme/components/MyProfile.vue'
+import MyType from './theme/components/MyType.vue'
+import Typed from 'typed.js';
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -20,5 +23,7 @@ export default defineClientConfig({
     // your custom components
     // app.component('CustomComponent', CustomComponent)
     app.component('MyProfile', MyProfile)
+    app.component('MyType', MyType)
+    app.directive('typed', Typed)
   },
 })

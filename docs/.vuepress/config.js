@@ -176,4 +176,5 @@ export default defineUserConfig({
     //   locale: '/',    // 默认仅为主语言生成 llms 友好内容
     // }
   }),
+  
 })
