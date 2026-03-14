@@ -1,7 +1,7 @@
 {
   "name": "qu-tang",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "蘧堂の小窝",
   "license": "MIT",
   "scripts": {
@@ -13,13 +13,20 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "file-loader": "^6.2.0",
     "http-server": "^14.1.1",
     "typescript": "^5.9.3",
+    "url-loader": "^4.1.1",
     "vue": "^3.5.26",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.190"
   },
   "engines": {
     "node": "^20.19.0 || >=22.0.0"
+  },
+  "dependencies": {
+    "esbuild": "^0.27.4",
+    "typed.js": "^3.0.0",
+    "vue-typed-js": "^0.1.2"
   }
 }
