@@ -14,7 +14,10 @@ config:
     
     hero:
       name: 蘧堂の小窝
-      text: WELCOME!
+      text: ' '
+  -
+    type: custom
+    full: true
 
 ---
 
@@ -32,3 +35,8 @@ config:
 }
 
 </style>
+
+<template>
+  <MyType/>
+</template>
+
