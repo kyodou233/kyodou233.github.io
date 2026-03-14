@@ -94,8 +94,4 @@
   display: none !important;
 }
 
-@font-face {
-  font-family: "寒蝉云墨体";
-  src: url("../../public/ChillYunmoGothicBold.otf") format("opentype");
-}
 
