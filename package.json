@@ -25,7 +25,9 @@
     "node": "^20.19.0 || >=22.0.0"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
     "esbuild": "^0.27.4",
+    "tailwindcss": "^4.2.2",
     "typed.js": "^3.0.0",
     "vue-typed-js": "^0.1.2"
   }
