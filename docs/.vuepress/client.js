@@ -10,6 +10,7 @@ import './theme/styles/custom.css'
 
 import MyProfile from './theme/components/MyProfile.vue'
 import MyType from './theme/components/MyType.vue'
+import MyHomeBg from './theme/components/MyHomeBg.vue'
 import Typed from 'typed.js';
 
 export default defineClientConfig({
@@ -24,6 +25,8 @@ export default defineClientConfig({
     // app.component('CustomComponent', CustomComponent)
     app.component('MyProfile', MyProfile)
     app.component('MyType', MyType)
+    app.component('MyHomeBg', MyHomeBg)
+
     app.directive('typed', Typed)
   },
 })
