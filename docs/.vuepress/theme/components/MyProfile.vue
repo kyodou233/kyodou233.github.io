@@ -144,7 +144,6 @@
     }
 
     .aside {
-        width: 100%;
         position: static;
         align-items: center;
         margin-top: 16px;
@@ -155,23 +154,4 @@
     }
 }
 
-@media (max-width: 768px) {
-    .my-content {
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 0 16px;
-        width: 100%;
-    }
-
-    .aside {
-        width: 100%;
-        position: static;
-        align-items: center;
-        margin-top: 16px;
-    }
-
-    .about-content {
-        width: 100%;
-    }
-}
 </style>

@@ -1,4 +1,5 @@
 import { defineClientConfig } from 'vuepress/client'
+import VPPostsProfile from 'D:\\lrz\\code\\qutang\\node_modules\\vuepress-theme-plume\\lib\\client\\components\\Posts\\VPPostsProfile.vue'
 // import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
 // import NpmBadge from 'vuepress-theme-plume/features/NpmBadge.vue'
 // import NpmBadgeGroup from 'vuepress-theme-plume/features/NpmBadgeGroup.vue'
@@ -26,7 +27,7 @@ export default defineClientConfig({
     app.component('MyProfile', MyProfile)
     app.component('MyType', MyType)
     app.component('MyHomeBg', MyHomeBg)
-
+    app.component('VPPostsProfile', VPPostsProfile)
     app.directive('typed', Typed)
   },
 })

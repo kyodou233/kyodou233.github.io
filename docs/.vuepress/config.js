@@ -6,12 +6,15 @@
  * 请注意，对此文件的修改都会重启 vuepress 服务。
  * 部分配置项的更新没有必要重启 vuepress 服务，建议请在 `.vuepress/config.js` 文件中配置
  *
- * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
+ * 特别地，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会被覆盖
  */
 
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 export default defineUserConfig({
   base: '/',
@@ -24,7 +27,20 @@ export default defineUserConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }]
   ],
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      css: {
+        postcss: {
+          plugins: [
+            tailwindcss(),
+            autoprefixer(),
+          ],
+        },
+      },
+    },
+    vuePluginOptions: {},
+  }),
+
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
@@ -42,7 +58,7 @@ export default defineUserConfig({
     // editLink: true,
     // lastUpdated: true,
     // contributors: true,
-    // changelog: false,
+    changelog: true,
 
     /**
      * 编译缓存，加快编译速度
@@ -144,17 +160,18 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+    comment: {
+      provider: 'Twikoo', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      envId: 'https://qutang-twikoo.vercel.app/',
+      comment: true,
+      repo: '',
+      repoId: '',
+      category: '',
+      categoryId: '',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'top',
+   },
 
     /**
      * 资源链接替换
