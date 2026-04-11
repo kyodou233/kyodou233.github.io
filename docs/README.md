@@ -21,3 +21,6 @@ config:
   <MyType/>
 </template>
 
+<ClientOnly>
+  <MyHomeBg/>
+</ClientOnly>

@@ -13,8 +13,10 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/bundler-webpack": "^2.0.0-rc.26",
     "file-loader": "^6.2.0",
     "http-server": "^14.1.1",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3",
     "url-loader": "^4.1.1",
     "vue": "^3.5.26",
@@ -25,9 +27,8 @@
     "node": "^20.19.0 || >=22.0.0"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
     "esbuild": "^0.27.4",
-    "tailwindcss": "^4.2.2",
+    "twikoo": "^1.7.7",
     "typed.js": "^3.0.0",
     "vue-typed-js": "^0.1.2"
   }
