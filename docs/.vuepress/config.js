@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 import tailwindcss from 'tailwindcss'
-import autoprefixer from 'autoprefixer.d.ts'
+import autoprefixer from 'autoprefixer'
 
 export default defineUserConfig({
   base: '/',
