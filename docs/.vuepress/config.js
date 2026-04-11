@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 import tailwindcss from 'tailwindcss'
-//import autoprefixer from 'autoprefixer'
+import autoprefixer from 'autoprefixer'
 
 export default defineUserConfig({
   base: '/',
@@ -162,7 +162,8 @@ export default defineUserConfig({
      */
     comment: {
       provider: 'Twikoo', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      envId: 'https://qutang-twikoo.vercel.app/',
+      envId: 'https://kyodou-qutang-twikoo.hf.space/',
+      // VELCEL: envId: 'https://qutang-twikoo.vercel.app/',
       comment: true,
       repo: '',
       repoId: '',
