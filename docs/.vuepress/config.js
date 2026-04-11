@@ -162,7 +162,7 @@ export default defineUserConfig({
      */
     comment: {
       provider: 'Twikoo', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      envId: 'https://kyodou-qutang-twikoo.hf.space/',
+      envId: 'https://kyodou-huggingface-twikoo-qutang.hf.space/',
       // VELCEL: envId: 'https://qutang-twikoo.vercel.app/',
       comment: true,
       repo: '',
