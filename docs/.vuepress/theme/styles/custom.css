@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "寒蝉云墨体";
+    src: url("/ChillYunmoGothicBold.woff");
+}
+
 :root {
     /** 主题颜色 */
     --vp-c-brand-1: #5086a1;

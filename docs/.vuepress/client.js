@@ -11,6 +11,8 @@ import './theme/styles/custom.css'
 import MyProfile from './theme/components/MyProfile.vue'
 import MyType from './theme/components/MyType.vue'
 import MyHomeBg from './theme/components/MyHomeBg.vue'
+import SiteInfo from './theme/components/SiteInfo.vue'
+import BlogCounting from './theme/components/BlogCounting.vue'
 import Typed from 'typed.js';
 
 export default defineClientConfig({
@@ -25,7 +27,9 @@ export default defineClientConfig({
     // app.component('CustomComponent', CustomComponent)
     app.component('MyProfile', MyProfile)
     app.component('MyType', MyType)
+    app.component('SiteInfo', SiteInfo)
     app.component('MyHomeBg', MyHomeBg)
+    app.component('BlogCounting', BlogCounting)
     app.directive('typed', Typed)
   },
 })
