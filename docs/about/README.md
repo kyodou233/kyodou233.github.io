@@ -1,77 +1,151 @@
----
-pageLayout: page
+--- 
+pageLayout: page 
 ---
 
-
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="text-center text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
-    <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">Everything you need to deploy your app</p>
-    <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-      <div class="relative lg:row-span-2">
-        <div class="absolute inset-px rounded-lg bg-gray-800 lg:rounded-l-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-            <p class="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Mobile friendly</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
-          </div>
-          <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
-            <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 outline outline-1 outline-white/20">
-              <img src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png" alt="" class="size-full object-cover object-top" />
+<div class="relative max-w-6xl mx-auto p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
+        <!-- 顶部介绍 -->
+        <div class="md:col-span-2 rounded-2xl p-6 border
+        bg-gradient-to-r from-cyan-500/70 to-blue-500/70 border-white/10 text-white
+        shadow-[0_4px_20px_rgba(0,0,0,0.15)]">
+            <p class="text-sm">
+                泥嚎(*´▽｀)ノノ
+            </p>
+            <h1 class="text-3xl font-bold mt-2">
+                这里是吕蘧堂 / BA4SSP / ro kyodou
+            </h1>
+            <p class="text-sm mt-2">
+                class 我 extends Human {}
+            </p>
+        </div>
+        <!-- motto -->
+        <div class="md:col-span-1 rounded-2xl p-6 border
+        bg-white text-gray-800 border-gray-200
+        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
+        dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
+        dark:text-gray-200 dark:border-white/10
+        dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+            <p class="text-sm">
+                座右铭
+            </p>
+            <h2>
+                挽狂澜于既倒，扶大厦之将倾。
+            </h2>
+        </div>
+        <!-- 生活 -->
+        <div class="md:col-span-1 rounded-2xl p-6 border
+        bg-white text-gray-800 border-gray-200
+        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
+        dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
+        dark:text-gray-200 dark:border-white/10
+        dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+            <p class="text-sm">
+                生活
+            </p>
+            <h2 class="text-2xl font-bold mb-4">
+                我的生活
+            </h2>
+            <div class="w-full h-40 rounded-full border-8 border-cyan-400/30 flex items-center justify-center text-sm">
+                图表区域
             </div>
-          </div>
         </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow outline outline-1 outline-white/15 lg:rounded-l-[2rem]"></div>
-      </div>
-      <div class="relative max-lg:row-start-1">
-        <div class="absolute inset-px rounded-lg bg-gray-800 max-lg:rounded-t-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-            <p class="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Performance</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.</p>
-          </div>
-          <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-            <img src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-03-performance.png" alt="" class="w-full max-lg:max-w-xs" />
-          </div>
-        </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow outline outline-1 outline-white/15 max-lg:rounded-t-[2rem]"></div>
-      </div>
-      <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-          <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-            <p class="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Security</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.</p>
-          </div>
-          <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-            <img src="https://tailwindcss.com/plus-assets/img/component-images/dark-bento-03-security.png" alt="" class="h-[min(152px,40cqw)] object-cover" />
-          </div>
-        </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow outline outline-1 outline-white/15"></div>
-      </div>
-      <div class="relative lg:row-span-2">
-        <div class="absolute inset-px rounded-lg bg-gray-800 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-        <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-          <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
-            <p class="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Powerful APIs</p>
-            <p class="mt-2 max-w-lg text-sm/6 text-gray-400 max-lg:text-center">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.</p>
-          </div>
-          <div class="relative min-h-[30rem] w-full grow">
-            <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900/60 outline outline-1 outline-white/10">
-              <div class="flex bg-gray-900 outline outline-1 outline-white/5">
-                <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
-                  <div class="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
-                  <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+        <!-- 站点信息 -->
+        <div class="md:col-span-1 rounded-2xl p-6 border
+        bg-white text-gray-800 border-gray-200
+        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
+        dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
+        dark:text-gray-200 dark:border-white/10
+        dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+            <p class="text-sm">
+                站点信息
+            </p>
+            <h2 class="text-2xl font-bold mb-4">
+                站点信息
+            </h2>
+            <div class="grid grid-cols-2 gap-4 text-sm text-center">
+                <div>
+                    <p class="text-xl">
+                        7
+                    </p>
+                    <p>
+                        文章
+                    </p>
                 </div>
-              </div>
-              <div class="px-6 pb-14 pt-6">
-                <!-- Your code example -->
-              </div>
+                <div>
+                    <p class="text-xl">
+                        11
+                    </p>
+                    <p>
+                        标签
+                    </p>
+                </div>
+                <div>
+                    <p class="text-xl">
+                        2
+                    </p>
+                    <p>
+                        分类
+                    </p>
+                </div>
+                <div>
+                    <p class="text-xl">
+                        1
+                    </p>
+                    <p>
+                        评论
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="pointer-events-none absolute inset-px rounded-lg shadow outline outline-1 outline-white/15 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
-      </div>
+        <!-- 访问统计 -->
+        <div class="md:col-span-1 rounded-2xl p-6 border
+        bg-white text-gray-800 border-gray-200
+        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
+        dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
+        dark:text-gray-200 dark:border-white/10
+        dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+            <p class="text-sm">
+                数据
+            </p>
+            <h2 class="text-2xl font-bold mb-4">
+                访问统计
+            </h2>
+            <p>
+                12345 次访问
+            </p>
+        </div>
+        <!-- 关于我 -->
+        <div class="md:col-span-3 rounded-2xl p-6 border
+        bg-white text-gray-800 border-gray-200
+        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
+        dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
+        dark:text-gray-200 dark:border-white/10
+        dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
+            <h2 class="text-xl font-semibold mb-2">
+                小站历史
+            </h2>
+            <p>
+                {{ history }}
+            </p>
+        </div>
     </div>
-  </div>
 </div>
+
+<script>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const history = `
+
+    26.2.24 建站了！用的是vuepress，还在rc阶段。 
+
+    ······中间忘了 
+
+    26.某一天 改成vitepress 
+    
+    26.the day after 某一天 改回vuepress
+
+`
+
+console.log(history)
+</script>
+
