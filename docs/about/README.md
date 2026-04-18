@@ -104,14 +104,11 @@ pageLayout: page
         dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
         dark:text-gray-200 dark:border-white/10
         dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
-            <p class="text-sm">
-                数据
-            </p>
             <h2 class="text-2xl font-bold mb-4">
                 访问统计
             </h2>
             <p>
-                12345 次访问
+                <VisitingCounter />
             </p>
         </div>
         <!-- 关于我 -->
@@ -124,28 +121,23 @@ pageLayout: page
             <h2 class="text-xl font-semibold mb-2">
                 小站历史
             </h2>
-            <p>
+            <p style="white-space: pre-line;">
                 {{ history }}
             </p>
         </div>
     </div>
 </div>
 
-<script>
+<script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-const history = `
-
+const history = ref(`
     26.2.24 建站了！用的是vuepress，还在rc阶段。 
-
     ······中间忘了 
-
     26.某一天 改成vitepress 
-    
-    26.the day after 某一天 改回vuepress
+    26.the day after 某一天 改回vuepress  
+    26.4.11 小站历史出生日
+`)
 
-`
-
-console.log(history)
 </script>
 
