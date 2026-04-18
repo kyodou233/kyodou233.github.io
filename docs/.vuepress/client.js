@@ -12,7 +12,7 @@ import MyProfile from './theme/components/MyProfile.vue'
 import MyType from './theme/components/MyType.vue'
 import MyHomeBg from './theme/components/MyHomeBg.vue'
 import SiteInfo from './theme/components/SiteInfo.vue'
-import BlogCounting from './theme/components/BlogCounting.vue'
+import VisitingCounter from './theme/components/VisitingCounter.vue'
 import Typed from 'typed.js';
 
 export default defineClientConfig({
@@ -29,7 +29,7 @@ export default defineClientConfig({
     app.component('MyType', MyType)
     app.component('SiteInfo', SiteInfo)
     app.component('MyHomeBg', MyHomeBg)
-    app.component('BlogCounting', BlogCounting)
+    app.component('VisitingCounter', VisitingCounter)
     app.directive('typed', Typed)
   },
 })

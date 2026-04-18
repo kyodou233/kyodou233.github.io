@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
     /** 主题颜色 */
     --vp-c-brand-1: #5086a1;
