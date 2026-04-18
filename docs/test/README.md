@@ -1,9 +1,9 @@
 123
-
+<VisitingCounter />
 行 行
 
-<MyType/>
+<MyType />
 
-<SiteInfo/>
+<SiteInfo />
 
-<BlogCounting/>
+<BlogCounting />
