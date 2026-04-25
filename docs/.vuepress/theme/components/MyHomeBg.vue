@@ -3,7 +3,7 @@
 <script setup>
 import { onMounted } from "vue";
 
-const imageModules = import.meta.glob("/bg/*.{jpg,png,webp,jpeg}", {
+const imageModules = import.meta.glob("../../public/bg/*.{jpg,png,webp,jpeg}", {
   eager: true,
   query: '?url',
   import: 'default',

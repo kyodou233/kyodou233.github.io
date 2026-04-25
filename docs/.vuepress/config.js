@@ -16,6 +16,8 @@ import { plumeTheme } from 'vuepress-theme-plume'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
+import { siteInfoPlugin } from './theme/plugins/site-info.js'
+
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
@@ -26,6 +28,11 @@ export default defineUserConfig({
     // 配置站点图标
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { content: 'notranslate' }],
+  ],
+
+  plugins: [
+    // 其他插件...
+    siteInfoPlugin(),
   ],
 
   bundler: viteBundler({

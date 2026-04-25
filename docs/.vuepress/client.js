@@ -14,6 +14,7 @@ import MyHomeBg from './theme/components/MyHomeBg.vue'
 import SiteInfo from './theme/components/SiteInfo.vue'
 import VisitingCounter from './theme/components/VisitingCounter.vue'
 import Typed from 'typed.js';
+import { siteInfoPlugin } from './theme/plugins/site-info.js'
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -31,5 +32,6 @@ export default defineClientConfig({
     app.component('MyHomeBg', MyHomeBg)
     app.component('VisitingCounter', VisitingCounter)
     app.directive('typed', Typed)
+    app.use(siteInfoPlugin)
   },
 })
