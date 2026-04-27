@@ -17,6 +17,7 @@ config:
 ---
 
 <template>
+  <FontLoader />
   <MyHomeBg/>
   <MyType/>
 </template>

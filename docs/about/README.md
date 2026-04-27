@@ -2,7 +2,7 @@
 pageLayout: page 
 ---
 
-<div class="relative max-w-6xl mx-auto px-6 pb-6">
+<div class="relative max-w-6xl mx-auto p-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
         <!-- 顶部介绍 -->
         <div class="md:col-span-2 rounded-2xl p-6 border
@@ -25,11 +25,8 @@ pageLayout: page
         dark:bg-gradient-to-br dark:from-[#1a1f2b] dark:to-[#0f172a]
         dark:text-gray-200 dark:border-white/10
         dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
-            <p class="text-sm">
-                座右铭
-            </p>
             <h2>
-                挽狂澜于既倒，扶大厦之将倾。
+                1233544653
             </h2>
         </div>
         <!-- 生活 -->
@@ -95,6 +92,7 @@ const history = ref(`
     26.某一天 改成vitepress 
     26.the day after 某一天 改回vuepress  
     26.4.11 小站历史出生日
+    26.4.27 因为之前直接在css里面设置font-face，vite会报错（为什么会报错！！！），所以加了一个FontLoader.vue组件
 `)
 
 </script>
