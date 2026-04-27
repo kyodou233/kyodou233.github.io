@@ -15,7 +15,7 @@ import SiteInfo from './theme/components/SiteInfo.vue'
 import VisitingCounter from './theme/components/VisitingCounter.vue'
 import Typed from 'typed.js';
 import { siteInfoPlugin } from './theme/plugins/site-info.js'
-import { fontLoad } from './theme/plugins/font-load.ts'
+import FontLoader from './theme/components/FontLoader.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
@@ -32,8 +32,8 @@ export default defineClientConfig({
     app.component('SiteInfo', SiteInfo)
     app.component('MyHomeBg', MyHomeBg)
     app.component('VisitingCounter', VisitingCounter)
+    app.component('FontLoader', FontLoader)
     app.directive('typed', Typed)
     app.use(siteInfoPlugin)
-    app.use(fontLoad)
   },
 })
