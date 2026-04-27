@@ -17,6 +17,7 @@ import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 import { siteInfoPlugin } from './theme/plugins/site-info.js'
+import { fontLoad } from './theme/plugins/font-load.ts'
 
 export default defineUserConfig({
   base: '/',
@@ -31,8 +32,16 @@ export default defineUserConfig({
   ],
 
   plugins: [
-    // 其他插件...
+    // 我的插件...
     siteInfoPlugin(),
+    fontLoad(
+      [
+        {
+          name: '寒蝉云墨黑',
+          url: './public/ChillYunmoGothicBold.woff',
+        }
+      ],
+    ),
   ],
 
   bundler: viteBundler({

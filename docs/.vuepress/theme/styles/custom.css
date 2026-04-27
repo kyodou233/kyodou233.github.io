@@ -59,7 +59,7 @@
 @media (min-width: 960px) {
     .vp-page {
         min-height: calc(
-            100vh - var(--vp-nav-height) - var(--vp-footer-height, 0px)
+            100dvh - var(--vp-nav-height) - var(--vp-footer-height, 0px)
         );
         padding: 32px 24px;
         padding-top: 32px;
